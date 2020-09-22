@@ -1,0 +1,43 @@
+<html lang="en">
+    <head>
+		<title>Agrosensor Database</title>
+		<meta charset="utf-8" />
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="bootstrap.min.js"></script>
+		<link rel="stylesheet" href="bootstrap.min.css" />
+		<script language="javascript" type="text/javascript">
+			setInterval(function() {
+				url: "test.php",
+				type:POST;
+				}, 5000);
+		</script>
+		<script src="croppie.js"></script>
+		<link rel="stylesheet" href="croppie.css" />
+		<link rel="stylesheet" href="index.css" />
+    </head>
+	
+	
+    <body>
+         <h1>Welcome to Agrosensor Database Page</h1>
+		 <h3>Here we recieve data from our Arduino</h3>
+		 
+		 <form action="test.php" method="POST">
+			<!--
+			<input type="text" name="plant_name">
+			<input type="number" name="air_temp">
+			<input type="number" name="soil_temp">
+			<input type="number" name="ph_level">
+			<input type="number" name="soil_moisture">
+			-->
+			
+			<input type="submit" value="Insert">
+		 </form>
+
+		<form method="post" action="video-index.php" enctype='multipart/form-data'>
+      			<input type='file' name='file' />
+      			<input type='submit' value='Upload' name='submit'>
+   		</form>
+		
+    </body>
+</html>
+
